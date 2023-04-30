@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import Notification from "./Notification";
 import './Feedback.css';
 
 const Statistics = ({ good, neutral, bad, total, percentage }) => (
@@ -13,7 +14,7 @@ const Statistics = ({ good, neutral, bad, total, percentage }) => (
         <li className="result__value">Total: {total}</li>
         <li className="result__value">Percentage: {percentage}%</li>
         </ul>) :
-        (<p className="massage">"There is no feedback"</p>)
+        (<Notification massage="There is no feedback"/>)
         }    
     </div>
 );
