@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import './Feedback.css';
+import './Notification.css';
 
 const Notification  = ({ massage }) => (
         <p className="massage">{massage}</p>
